@@ -8,9 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class Inicio
 {
-    /**
-     * @Route("/")
-     */
+    #[Route('/', name: 'inicio')]
     public function inicio(): Response
     {
 
