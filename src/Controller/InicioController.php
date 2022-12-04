@@ -17,9 +17,11 @@ class InicioController extends AbstractController
         $foo = implode("<br>",$sessionapi->get('success'));
 
         
-        return new Response(
-            "$foo <br/><html><body> Ola Mundo</body></html>"
-        );
+        return $this->render('principal/inicio.html.twig');
+        
+        // new Response(
+        //     "$foo <br/><html><body> Ola Mundo</body></html>"
+        // );
     }
 
 }
