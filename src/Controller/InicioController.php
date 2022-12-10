@@ -14,10 +14,10 @@ class InicioController extends AbstractController
     {
 
         //$session = $requestStack->getSession();
-        $foo = implode("<br>",$sessionapi->get('success'));
+        $mensajeOK= $sessionapi->get('success');
 
         
-        return $this->render('principal/inicio.html.twig');
+        return $this->render('principal/inicio.html.twig',['mensajesExito'=>$mensajeOK]);
         
         // new Response(
         //     "$foo <br/><html><body> Ola Mundo</body></html>"

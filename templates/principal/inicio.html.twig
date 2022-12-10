@@ -2,6 +2,13 @@
 
 {% block body %}
 
+<div>
+    {% for mensaje in  mensajesExito %}
+    {{ mensaje }}
+    <br/>
+    {% endfor %}
+</div>
+
 <div> Ola Mundo</div>
 
 {% endblock %}
