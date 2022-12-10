@@ -19,9 +19,7 @@ class InicioController extends AbstractController
         
         return $this->render('principal/inicio.html.twig',['mensajesExito'=>$mensajeOK]);
         
-        // new Response(
-        //     "$foo <br/><html><body> Ola Mundo</body></html>"
-        // );
+
     }
 
 }
