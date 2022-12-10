@@ -1,14 +1,29 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
 <div>
-    {% for mensaje in  mensajesExito %}
-    {{ mensaje }}
-    <br/>
-    {% endfor %}
+
+	<div class="container">
+		{% for mensaje in  mensajesExito %}
+			<div class="row">
+				<div class="col">
+					{{ mensaje }}
+					<br/>
+				</div>
+			</div>
+		{% endfor %}
+
+		<div class="row"> 
+            <div class="col">
+                <h2 class="text-center display-2"> SYM 55 </h2>
+            </div>
+        </div>
+
+	</div>
+
+
 </div>
 
-<div> Ola Mundo</div>
+
 
 {% endblock %}
