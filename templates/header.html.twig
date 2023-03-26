@@ -38,8 +38,8 @@
             <span class="visually-hidden">Idioma</span>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item " href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Galego</a></li>
+            <li><a class="dropdown-item" href="/en/{{app.request.pathInfo|urlremovelocale}} "></a>English</li>      
+      <li><a class="dropdown-item" href="/gl/{{app.request.pathInfo|urlremovelocale}} ">Galego</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Otros</a></li>
           </ul>
@@ -72,10 +72,9 @@
       Idioma
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">English</a></li>
-      <li><a class="dropdown-item" href="#">Galego</a></li>
+      <li><a class="dropdown-item" href="/en/{{app.request.pathInfo|urlremovelocale}} ">English</a></li>      
+      <li><a class="dropdown-item" href="/gl/{{app.request.pathInfo|urlremovelocale}} ">Galego</a></li>
       <li><hr class="dropdown-divider"></li>
-      {# {{ dump(app.request) }} #}
       <li><a class="dropdown-item" href="#">Otros</a></li>
     </ul>
   </div>
