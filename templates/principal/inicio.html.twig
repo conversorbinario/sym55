@@ -3,5 +3,6 @@
 {% block body %}
 
 <div> {{"Hello"|trans}}</div>
+{{ app.request.locale|locale_name(app.request.locale) }}
 
 {% endblock %}
