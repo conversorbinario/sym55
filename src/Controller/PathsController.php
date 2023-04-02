@@ -19,11 +19,18 @@ class PathsController extends AbstractController
     public function inicioLocale(Request $request, FlashBagInterface $sessionapi): Response
     {
 
-        $locale = $request->getLocale();
+
         //$session = $requestStack->getSession();
-        $foo = implode("<br>",$sessionapi->get('success'));
+        $mensajeOK= $sessionapi->get('success');
+
         
-        return $this->render('principal/inicio.html.twig');
+        return $this->render('principal/inicio.html.twig',['mensajesExito'=>$mensajeOK]);
+
+        // $locale = $request->getLocale();
+        // //$session = $requestStack->getSession();
+        // $foo = implode("<br>",$sessionapi->get('success'));
+        
+        // return $this->render('principal/inicio.html.twig');
         
         // return new Response(
         //     "$foo <br/><html><body> Ola Mundo</body></html>"
